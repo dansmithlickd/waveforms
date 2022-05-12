@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  waveform:
+    hostname: waveform
+    build:
+      context: .
+      dockerfile: ./docker/waveform/Dockerfile    
+    volumes:
+      - ".:/tmp:rw"
